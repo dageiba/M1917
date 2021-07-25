@@ -83,13 +83,6 @@ public class ZuoProcedure extends M1917gunModElements.ModElement {
 							(true));
 				}
 			}
-			if ((Math.random() >= 0.95)) {
-				if (entity instanceof LivingEntity)
-					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.NAUSEA, (int) 600, (int) 5));
-				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
-					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("\u5C1D\u8D77\u6765\u5C31\u50CF\u54C6\u5566A\u68A6"), (true));
-				}
-			}
 			if ((Math.random() >= 0.75)) {
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.UNLUCK, (int) 12000, (int) 2));
@@ -97,7 +90,9 @@ public class ZuoProcedure extends M1917gunModElements.ModElement {
 					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 10, (int) 1));
 				entity.attackEntityFrom(DamageSource.GENERIC, (float) 1);
 				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
-					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("\u4F60\u771F\u201C\u8D70\u201D\u8FD0"), (true));
+					((PlayerEntity) entity).sendStatusMessage(
+							new StringTextComponent("\u4F60\u771F\u201C\u8D70\u201D\u8FD0\uFF0C\u5C1D\u8D77\u6765\u5C31\u50CF\u54C6\u5566A\u68A6"),
+							(true));
 				}
 			} else {
 				if (entity instanceof LivingEntity)

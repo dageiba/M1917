@@ -72,16 +72,6 @@ public class YouProcedure extends M1917gunModElements.ModElement {
 				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("\u771F\u662F\u4E2A\u4E0D\u9519\u7684\u4E3B\u610F"), (true));
 			}
 		}
-		if ((Math.random() >= 0.95)) {
-			if (((entity instanceof MobEntity) ? ((MobEntity) entity).getAttackTarget() : null) instanceof LivingEntity)
-				((LivingEntity) ((entity instanceof MobEntity) ? ((MobEntity) entity).getAttackTarget() : null))
-						.addPotionEffect(new EffectInstance(Effects.NAUSEA, (int) 600, (int) 5));
-			if (((entity instanceof MobEntity) ? ((MobEntity) entity).getAttackTarget() : null) instanceof PlayerEntity
-					&& !((entity instanceof MobEntity) ? ((MobEntity) entity).getAttackTarget() : null).world.isRemote()) {
-				((PlayerEntity) ((entity instanceof MobEntity) ? ((MobEntity) entity).getAttackTarget() : null))
-						.sendStatusMessage(new StringTextComponent("\u5C1D\u8D77\u6765\u5C31\u50CF\u54C6\u5566A\u68A6"), (true));
-			}
-		}
 		if ((Math.random() >= 0.75)) {
 			if (((entity instanceof MobEntity) ? ((MobEntity) entity).getAttackTarget() : null) instanceof LivingEntity)
 				((LivingEntity) ((entity instanceof MobEntity) ? ((MobEntity) entity).getAttackTarget() : null))
@@ -92,8 +82,9 @@ public class YouProcedure extends M1917gunModElements.ModElement {
 			((entity instanceof MobEntity) ? ((MobEntity) entity).getAttackTarget() : null).attackEntityFrom(DamageSource.GENERIC, (float) 1);
 			if (((entity instanceof MobEntity) ? ((MobEntity) entity).getAttackTarget() : null) instanceof PlayerEntity
 					&& !((entity instanceof MobEntity) ? ((MobEntity) entity).getAttackTarget() : null).world.isRemote()) {
-				((PlayerEntity) ((entity instanceof MobEntity) ? ((MobEntity) entity).getAttackTarget() : null))
-						.sendStatusMessage(new StringTextComponent("\u4F60\u771F\u201C\u8D70\u201D\u8FD0"), (true));
+				((PlayerEntity) ((entity instanceof MobEntity) ? ((MobEntity) entity).getAttackTarget() : null)).sendStatusMessage(
+						new StringTextComponent("\u4F60\u771F\u201C\u8D70\u201D\u8FD0\uFF0C\u5C1D\u8D77\u6765\u5C31\u50CF\u54C6\u5566A\u68A6"),
+						(true));
 			}
 		} else {
 			if (((entity instanceof MobEntity) ? ((MobEntity) entity).getAttackTarget() : null) instanceof LivingEntity)
