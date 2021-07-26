@@ -1,0 +1,31 @@
+{
+  "_fv": 18,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "d",
+    "customModelName": "Normal",
+    "name": "“幸运子弹”",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "可食用，也可作为m1917美国制史密斯维森的弹药"
+    ],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 2,
+    "saturation": 0.3,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": true,
+    "onEaten": {
+      "name": "Milk"
+    }
+  }
+}
