@@ -1,0 +1,39 @@
+{
+  "_fv": 18,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "e",
+    "customModelName": "Normal",
+    "name": "美国制M1917史密斯维森",
+    "specialInfo": [
+      "对人宝具"
+    ],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:LuckyBullet"
+    },
+    "shootConstantly": false,
+    "usageCount": 200,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.5,
+    "bulletDamage": 21.0,
+    "bulletKnockback": 2,
+    "bulletParticles": true,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:TheButtet"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}
