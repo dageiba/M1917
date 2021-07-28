@@ -54,3 +54,5 @@ dependencies {
 
 apply from: 'mcreator.gradle'
 
+jar.finalizedBy('reobfJar')
+
