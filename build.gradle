@@ -52,7 +52,5 @@ dependencies {
     minecraft 'net.minecraftforge:forge:1.16.5-36.1.0'
 }
 
-apply from: 'mcreator.gradle'
-
 jar.finalizedBy('reobfJar')
 
