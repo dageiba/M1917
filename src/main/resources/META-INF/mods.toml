@@ -10,7 +10,9 @@ credits="Nope"
 displayURL=""
 authors="Pluto mingwang"
 description='''
-Add M1917 in Minecraft.
+在游戏中添加了M1917系列枪械以及其他有趣的一点东西
+关于M1917创意来源：https://www.bilibili.com/video/BV1mf4y1e7j4
+关于解术散创意来源：火影忍者手游
 '''
 
 [[dependencies.m1917gun]]
