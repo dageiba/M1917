@@ -1,0 +1,11 @@
+{
+  "_fv": 18,
+  "_type": "tab",
+  "definition": {
+    "name": "M1917美国制史密斯维森",
+    "icon": {
+      "value": "CUSTOM:TM1917Gun"
+    },
+    "showSearch": false
+  }
+}
