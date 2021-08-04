@@ -1,0 +1,24 @@
+{
+  "_fv": 18,
+  "_type": "fluid",
+  "definition": {
+    "name": "NuclearWasteWater",
+    "textureStill": "nuclearwaterstill",
+    "textureFlowing": "nuclearwaterflow",
+    "luminosity": 1,
+    "density": 1330,
+    "viscosity": 1000,
+    "isGas": false,
+    "type": "WATER",
+    "generateBucket": true,
+    "creativeTab": {
+      "value": "CUSTOM:M1917"
+    },
+    "frequencyOnChunks": 0,
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "onEntityCollides": {
+      "name": "Nuclear"
+    }
+  }
+}
