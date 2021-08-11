@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[36,)"
-license="Academic Free License v3.0"
+license="All"
 
 [[mods]]
 modId="m1917gun"
@@ -10,7 +10,7 @@ credits="Nope"
 displayURL=""
 authors="Pluto mingwang"
 description='''
-ÔÚÓÎÏ·ÄÚÌí¼ÓÁËÒ»Ğ©¹£ÀàÎïÆ·
+åœ¨æ¸¸æˆå†…æ·»åŠ äº†ä¸€äº›æ¢—ç±»ç‰©å“
 '''
 
 [[dependencies.m1917gun]]
