@@ -35,11 +35,13 @@ public class WordIsVeryBigProcedure extends M1917gunModElements.ModElement {
 		if (world instanceof World && !world.isRemote()) {
 			((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("m1917gun:wordsbig")),
-					SoundCategory.NEUTRAL, (float) 2, (float) 2);
+					SoundCategory.NEUTRAL, (float) 1, (float) 1);
 		} else {
 			((World) world).playSound(x, y, z,
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("m1917gun:wordsbig")),
-					SoundCategory.NEUTRAL, (float) 2, (float) 2, false);
+					SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 		}
+		if (entity instanceof PlayerEntity)
+			((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 20);
 	}
 }
