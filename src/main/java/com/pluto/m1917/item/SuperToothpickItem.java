@@ -10,7 +10,6 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -29,6 +28,12 @@ import com.pluto.m1917.M1917gunModElements;
 
 import com.google.common.collect.Multimap;
 import com.google.common.collect.ImmutableMultimap;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.SoundEvent;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 
 @M1917gunModElements.ModElement.Tag
 public class SuperToothpickItem extends M1917gunModElements.ModElement {
@@ -95,15 +100,11 @@ public class SuperToothpickItem extends M1917gunModElements.ModElement {
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
 			World world = entity.world;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				WordIsVeryBigProcedure.executeProcedure($_dependencies);
-			}
+			world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("m1917gun:wordsbig")), SoundCategory.PLAYERS,
+				1, 1f / (random.nextFloat() * 0.5f + 1));
 			return retval;
 		}
 	}
 }
+
