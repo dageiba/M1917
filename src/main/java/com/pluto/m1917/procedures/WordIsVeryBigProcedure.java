@@ -29,7 +29,7 @@ public class WordIsVeryBigProcedure extends M1917gunModElements.ModElement {
 			Entity _ent = entity;
 			if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 				_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-						"tell @a \u00A7c\u00A7l\u6211\u7684\u5F88\u5927\uFF0C\u8BF7\u5FCD\u4E00\u4E0B ");
+						"tell @a[distance=..100] \u00A7c\u00A7l\u6211\u7684\u5F88\u5927\uFF0C\u8BF7\u5FCD\u4E00\u4E0B ");
 			}
 		}
 	}
