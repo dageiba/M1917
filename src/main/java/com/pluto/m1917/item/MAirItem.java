@@ -33,22 +33,6 @@ public class MAirItem extends M1917gunModElements.ModElement {
 			super(new Item.Properties().group(null).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("m_air");
 		}
-
-		@Override
-		public int getItemEnchantability() {
-			return 0;
-		}
-
-		@Override
-		public int getUseDuration(ItemStack itemstack) {
-			return 0;
-		}
-
-		@Override
-		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-			return 1F;
-		}
-
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
