@@ -62,22 +62,6 @@ public class WestguaknifeItem extends M1917gunModElements.ModElement {
 				super.addInformation(itemstack, world, list, flag);
 				list.add(new StringTextComponent("\u4F60\u54E5\u4FE9\u751F\u5F02\u5F62\u5417"));
 			}
-
-			@Override
-			public boolean hitEntity(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-				boolean retval = super.hitEntity(itemstack, entity, sourceentity);
-				double x = entity.getPosX();
-				double y = entity.getPosY();
-				double z = entity.getPosZ();
-				World world = entity.world;
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("sourceentity", sourceentity);
-					SarilangProcedure.executeProcedure($_dependencies);
-				}
-				return retval;
-			}
 		}.setRegistryName("westguaknife"));
 	}
 }
