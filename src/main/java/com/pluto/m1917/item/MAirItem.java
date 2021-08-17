@@ -40,3 +40,4 @@ public class MAirItem extends M1917gunModElements.ModElement {
 		}
 	}
 }
+//这玩意啥都不是，对己的枪其实也算是远程的弓，为了让其有弓的感觉，所以还是整了个发射物，不过这个发射物是空气（
