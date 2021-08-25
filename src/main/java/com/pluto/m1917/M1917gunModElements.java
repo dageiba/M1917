@@ -41,7 +41,6 @@ public class M1917gunModElements {
 	public M1917gunModElements() {
 		sounds.put(new ResourceLocation("m1917gun", "toygun"), new net.minecraft.util.SoundEvent(new ResourceLocation("m1917gun", "toygun")));
 		sounds.put(new ResourceLocation("m1917gun", "truegun"), new net.minecraft.util.SoundEvent(new ResourceLocation("m1917gun", "truegun")));
-		sounds.put(new ResourceLocation("m1917gun", "wordsbig"), new net.minecraft.util.SoundEvent(new ResourceLocation("m1917gun", "wordsbig")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("m1917gun").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();
